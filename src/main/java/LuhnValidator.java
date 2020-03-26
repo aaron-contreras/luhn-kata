@@ -5,15 +5,11 @@ class LuhnValidator {
         
         String spacesCleaned = candidate.replaceAll(" ", "");
 
-        if (spacesCleaned.length() < 2) {
-            return false;
-        }
+        if (spacesCleaned.length() < 2) return false;
         
         String cleaned = spacesCleaned.replaceAll("[^0-9]", "");
 
-        if (cleaned.length() != spacesCleaned.length()) {
-            return false;
-        }
+        if (cleaned.length() != spacesCleaned.length()) return false;
 
         int[] digits = new int[cleaned.length()];
 
