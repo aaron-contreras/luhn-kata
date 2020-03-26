@@ -29,7 +29,7 @@ class LuhnValidator {
             sum += digits[i];
         }
         
-        return sum % 10 == 0 ? true : false;        
+        return sum % 10 == 0;        
     }
 
 }
